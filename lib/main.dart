@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
-          lazy: false,
+          // lazy: false,
           create: (_) => DiscoverProvider()..loadNextPage(),
         ),
       ],
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         title: 'TokTik',
         debugShowCheckedModeBanner: false,
         theme: AppTheme().getTheme(),
-        home: const DiscoverScreen(),
+        home: DiscoverScreen(),
       ),
     );
   }
