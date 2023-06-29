@@ -30,7 +30,7 @@ class VideoScrollableView extends StatelessWidget {
             ),
             Positioned(
               bottom: 42,
-              right: 24,
+              right: 16,
               child: VideoButtons(video: videoPost),
             )
           ],
